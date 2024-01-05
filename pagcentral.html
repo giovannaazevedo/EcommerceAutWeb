@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEEKBOOKS | A sua livraria GEEK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+   
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "pagcentral.html">
+                <img src = "Imagens/logo.png" alt = "Ícone do site">
+                <span class = "text-uppercase fw-lighter ms-2">GEEKBOOKS</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                
+                <button type="button" class="btn position-relative">
+                    <a href="login.html"><i class="bi bi-person-circle"></i></a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+                
+                <button type="button" class="btn position-relative">
+                    <a href="carrinho.html"><i class="bi bi-cart-fill"></i></a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+
+                <button type="button" class="btn position-relative">
+                    <a href="favoritos.html"><i class="bi bi-suit-heart-fill"></i></a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+
+                <button type="button" class="btn position-relative">
+                    <i class="bi bi-search"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2 ">
+                        <a href="#header" class="nav-link text-uppercase text-dark">Home</a>
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="#destaques" class="nav-link text-uppercase text-dark">Destaques</a>
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="#prevenda" class="nav-link text-uppercase text-dark">Pré-venda</a>
+                    </li>
+
+                    
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a href="#goticos" class="nav-link text-uppercase text-dark">Especiais</a>
+                    </li>
+
+                                                           
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a href="#populares" class="nav-link text-uppercase text-dark">Populares</a>
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="cadastro.html" class="nav-link text-uppercase text-dark">Seja cliente</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <header id="header" class="vh-100 carousel slide" data-bs-ride= "carousel " style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class = "text-white ">Onde a imaginação e a cultura geek se encontram</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Sua livraria literária favorita</h1>
+                <a href ="#destaques" class="btn mt-3 text-uppercase">Compre agora</a>
+            </div>
+
+            <div class="text-center carousel-item">
+                <h2 class = "text-white ">Descontos épicos</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Um universo literário sem gastar uma fortuna</h1>
+                <a href ="#destaques" class="btn mt-3 text-uppercase">Compre agora</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <section id="destaques" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Destaques</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">Tudo</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter = ".best">Best Sellers</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter = ".ofer">Ofertas</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter = ".lanc">Lançamentos</button>
+                </div>
+            </div>
+
+            <div class="destaques-list mt-4 row gx-0 gy-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 lanc">
+                    <div class="destaques-img position-relative">
+                        <a href="acasatorta.html"><img src="imagens/Livros/agathachristie_acasatorta_harpercollins.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">A casa torta</p>
+                        <span class="fw-bold">R$ 54,90</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="ummisterionocaribe.html"><img src="imagens/Livros/agathachristie_ummisterionocaribe_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Um mistério no Caribe</p>
+                        <span class="fw-bold">R$ 44,98</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="assassinatonoexpressodooriente.html"><img src="imagens/Livros/agathachristie_assassinatonoexpressodooriente_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Assassinato no Expresso do Oriente</p>
+                        <span class="fw-bold">R$ 42,00</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 ofer">
+                    <div class="destaques-img position-relative">
+                        <a href="ocavaloamarelo.html"><img src="imagens/Livros/agathachristie_ocavaloamarelo_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">O cavalo amarelo</p>
+                        <span class="fw-bold">R$ 39,12</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="oretratodedoriangray.html"><img src="imagens/Livros/doriangray_darkside.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">O retrato de Dorian Gray</p>
+                        <span class="fw-bold">R$ 67,92</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="dracula.html"><img src="imagens/Livros/dracula_darkside.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Drácula - Dark Edition</p>
+                        <span class="fw-bold">R$ 87,83</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="ladykillers.html"><img src="imagens/Livros/ladykilers_darkside.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Lady Killers: Assassinas em Série</p>
+                        <span class="fw-bold">R$ 67,92</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 ofer">
+                    <div class="destaques-img position-relative">
+                        <a href="maligno.html"><img src="imagens/Livros/maligno-opsicopatadacidadebranca_darkside.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                           
+                        </div>
+
+                        <p class="my-1">Maligno</p>
+                        <span class="fw-bold">R$ 48,99</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 lanc">
+                    <div class="destaques-img position-relative">
+                        <a href="atestemunhaoculardocrime.html"><img src="imagens/Livros/agathachristie_atestemunhaoculardocrime_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">A testemunha ocular do crime</p>
+                        <span class="fw-bold">R$ 38,98</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 lanc">
+                    <div class="destaques-img position-relative">
+                        <a href="depoisdofuneral.html"><img src="imagens/Livros/agathachristie_depoisdofuneral_harpercollins.jpg" alt="" class="w-100"></a>
+                       
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Depois do funeral</p>
+                        <span class="fw-bold">R$ 42,27</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 ofer">
+                    <div class="destaques-img position-relative">
+                        <a href="omisteriosomrquin.html"><img src="imagens/Livros/agathachristie_omisteriosomrquin_harpercollins.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">O misterioso Mr. Quin</p>
+                        <span class="fw-bold">R$ 42,63</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 ofer">
+                    <div class="destaques-img position-relative">
+                        <a href="noitesemfim.html"><img src="imagens/Livros/agathachristie_noitesemfim_harpercollins.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Noite sem fim</p>
+                        <span class="fw-bold">R$ 38,98</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="hp1.html"><img src="imagens/Livros/hp1capadura_rocco.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Harry Potter e a Pedra Filosofal: 1</p>
+                        <span class="fw-bold">R$ 50,92</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="hp2.html"><img src="imagens/Livros/hp2capadura_rocco.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Harry Potter e a Câmara Secreta: 2</p>
+                        <span class="fw-bold">R$ 55,17</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="hp3.html"><img src="imagens/Livros/hp3capadura_rocco.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Harry Potter e o prisioneiro de Azkaban: 3</p>
+                        <span class="fw-bold">R$ 52,43</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="hp4.html"><img src="imagens/Livros/hp4capadura_rocco.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">Harry Potter e o Cálice de Fogo: 4</p>
+                        <span class="fw-bold">R$ 70,90</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="senhordosaneis1.html"><img src="imagens/Livros/senhordosaneisp1_harpercollins.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">O Senhor dos Anéis: A Sociedade do Anel</p>
+                        <span class="fw-bold">R$ 47,53</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="senhordosaneis2.html"><img src="imagens/Livros/osenhordosaneisp2_harpercollins.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">O Senhor dos Anéis: As duas torres</p>
+                        <span class="fw-bold">R$ 47,53</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 best">
+                    <div class="destaques-img position-relative">
+                        <a href="senhordosaneis3.html"><img src="imagens/Livros/osenhordosaneisp3_harpercollins.jpg" alt="" class="w-100"></a>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">O Senhor dos Anéis: O retorno do rei</p>
+                        <span class="fw-bold">R$ 47,53</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3 ofer">
+                    <div class="destaques-img position-relative">
+                        <a href="ohobbit.html"><img src="imagens/Livros/hobbitcapadura_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Oferta</span>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="rating mt-3">
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                            <span class="text-primary"><i class="bi bi-star-fill"></i></span>
+                        </div>
+
+                        <p class="my-1">O Hobbit</p>
+                        <span class="fw-bold">R$ 49,63</span>
+                        <br>
+                        <br>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prevenda"  class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Explore o futuro da Literatura em nossa pré-venda especial</h2>
+            </div>
+
+            <div class="prevenda-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="prevenda-img position-relative overflow-hidden">
+                        <a href="duna4.html"><img src="Imagens/Livros/dunalivro4_aleph.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Imperador Deus de Duna</p>
+                        <span class="fw-bold d-block">R$ 80,37</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="prevenda-img position-relative overflow-hidden">
+                        <a href="duna5.html"><img src="Imagens/Livros/dunalivro5_aleph.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Hereges de Duna</p>
+                        <span class="fw-bold d-block">R$ 69,90</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="prevenda-img position-relative overflow-hidden">
+                        <a href="ascronicasdegeloefogo1.html"><img src="Imagens/Livros/ascronicasdegeloefogo1_suma.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">A guerra dos tronos (As Crônicas de Gelo e Fogo Livro 1)</p>
+                        <span class="fw-bold d-block">R$ 72,12</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="prevenda-img position-relative overflow-hidden">
+                        <a href="ascronicasdegeloefogo2.html"><img src="Imagens/Livros/ascronicasdegeloefogo2_suma.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">A fúria dos reis (As Crônicas de Gelo e Fogo Livro 2)</p>
+                        <span class="fw-bold d-block">R$ 70,70</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="bannerofertas1"  class="py-5">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class="bannerofertas1-content">
+                    <span class="text-white">Descontos de até 30% em clássicos góticos</span>
+                    <h2 class="mt-2 mb-4 text-white">Mergulhe no lado sombrio da Literatura com ofertas surpreendentes</h2>
+                    <a href="#misterio" class="btn">Compre agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="goticos"  class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Mistérios sombrios: explore a seção gótica com livros arrepiantes!</h2>
+            </div>
+
+            <div class="goticos-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="dracula.html"><img src="Imagens/Livros/dracula_darkside.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Drácula - Dark Edition</p>
+                        <span class="fw-bold d-block">R$ 87,83</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="goticos-img position-relative overflow-hidden">
+                        <a href="maligno.html"><img src="Imagens/Livros/maligno-opsicopatadacidadebranca_darkside.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Maligno</p>
+                        <span class="fw-bold d-block">R$ 48,99</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="goticos-img position-relative overflow-hidden">
+                        <a href="ladykillers.html"><img src="Imagens/Livros/ladykilers_darkside.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="bi bi-suit-heart-fill" style="color: rgb(134, 87, 223);"></i>
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Lady Killers: Assassinas em Série</p>
+                        <span class="fw-bold d-block">R$ 67,92</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="goticos-img position-relative overflow-hidden">
+                        <a href="oretratodedoriangray.html"><img src="Imagens/Livros/doriangray_darkside.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="bi bi-suit-heart-fill" style="color: rgb(134, 87, 223);"></i>
+                        </span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">O retrato de Dorian Gray</p>
+                        <span class="fw-bold d-block">R$ 67,92</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="fantasia"  class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Encante-se: conheça a magia da Fantasia com nossos livros selecionados!</h2>
+            </div>
+
+            <div class="fantasia-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="hp1.html"><img src="Imagens/Livros/hp1capadura_rocco.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Harry Potter e a Pedra Filosofal: 1</p>
+                        <span class="fw-bold d-block">R$ 50,92</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="hp2.html"><img src="Imagens/Livros/hp2capadura_rocco.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Harry Potter e a Câmara Secreta: 2</p>
+                        <span class="fw-bold d-block">R$ 55,17</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="hp3.html"><img src="Imagens/Livros/hp3capadura_rocco.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Harry Potter e o prisioneiro de Azkaban: 3</p>
+                        <span class="fw-bold d-block">R$ 52,43</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="hp4.html"><img src="Imagens/Livros/hp4capadura_rocco.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Harry Potter e o Cálice de Fogo: 4</p>
+                        <span class="fw-bold d-block">R$ 70,90</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="senhordosaneis1.html"><img src="Imagens/Livros/senhordosaneisp1_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">O Senhor dos Anéis: A Sociedade do Anel</p>
+                        <span class="fw-bold d-block">R$ 47,53</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="senhordosaneis2.html"><img src="Imagens/Livros/osenhordosaneisp2_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">O Senhor dos Anéis: As duas torres</p>
+                        <span class="fw-bold d-block">R$ 47,53</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="senhordosaneis3.html"><img src="Imagens/Livros/osenhordosaneisp3_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">O Senhor dos Anéis: O retorno do rei</p>
+                        <span class="fw-bold d-block">R$ 47,53</span>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="ohobbit.html"><img src="Imagens/Livros/hobbitcapadura_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">O Hobbit</p>
+                        <span class="fw-bold d-block">R$ 49,63</span>
+                        <br>
+                        <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bannerofertas2"  class="py-5">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class="bannerofertas2-content">
+                    <span class="text-white">Mistérios à maneira de Agatha</span>
+                    <h2 class="mt-2 mb-4 text-white">Descubra a elegância do suspense</h2>
+                    <a href="#misterio" class="btn">Compre agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="misterio"  class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Rastros sombrios: nossa coleção de crimes e mistérios te aguarda</h2>
+            </div>
+
+            <div class="misterio-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="fantasia-img position-relative overflow-hidden">
+                        <a href="acasatorta.html"><img src="Imagens/Livros/agathachristie_acasatorta_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">A casa torta</p>
+                        <span class="fw-bold d-block">R$ 54,90</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="misterio-img position-relative overflow-hidden">
+                        <a href="ocavaloamarelo.html"><img src="Imagens/Livros/agathachristie_ocavaloamarelo_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">O cavalo amarelo</p>
+                        <span class="fw-bold d-block">R$ 39,12</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="misterio-img position-relative overflow-hidden">
+                        <a href="assassinatonoexpressodooriente.html"><img src="Imagens/Livros/agathachristie_assassinatonoexpressodooriente_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Assassinato no Expresso do Oriente</p>
+                        <span class="fw-bold d-block">R$ 42,00</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="misterio-img position-relative overflow-hidden">
+                        <a href="ummisterionocaribe.html"><img src="Imagens/Livros/agathachristie_ummisterionocaribe_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Um mistério no Caribe</p>
+                        <span class="fw-bold d-block">R$ 44,98</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="misterio-img position-relative overflow-hidden">
+                        <a href="noitesemfim.html"><img src="Imagens/Livros/agathachristie_noitesemfim_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Noite sem fim</p>
+                        <span class="fw-bold d-block">R$ 38,98</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="misterio-img position-relative overflow-hidden">
+                        <a href="depoisdofuneral.html"><img src="Imagens/Livros/agathachristie_depoisdofuneral_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">Depois do funeral</p>
+                        <span class="fw-bold d-block">R$ 42,27</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="misterio-img position-relative overflow-hidden">
+                        <a href="atestemunhaoculardocrime.html"><img src="Imagens/Livros/agathachristie_atestemunhaoculardocrime_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">A testemunha ocular do crime</p>
+                        <span class="fw-bold d-block">R$ 38,98</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                    <div class="misterio-img position-relative overflow-hidden">
+                        <a href="omisteriosomrquin.html"><img src="Imagens/Livros/agathachristie_omisteriosomrquin_harpercollins.jpg" alt="" class="w-100"></a>
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="mt-3 mb-1">O misterioso Mr. Quin</p>
+                        <span class="fw-bold d-block">R$ 42,63</span>
+                        <a href="" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "populares" class = "py-5">
+        <div class = "container">
+            <div class = "title text-center pt-3 pb-5">
+                <h2 class = "position-relative d-inline-block ms-4">Populares</h2>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Melhores avaliações</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/agathachristie_assassinatonoexpressodooriente_harpercollins.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Assassinato no Expresso do Oriente</p>
+                            <span>R$ 42,00</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/ascronicasdegeloefogo1_suma.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">A guerra dos tronos (As Crônicas de Gelo e Fogo Livro 1)</p>
+                            <span>R$ 72,12</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/doriangray_darkside.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">O retrato de Dorian Gray</p>
+                            <span>R$ 67,92</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Mais vendidos</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/hobbitcapadura_harpercollins.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">O Hobbit</p>
+                            <span>R$ 49,63</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/hp1capadura_rocco.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Harry Potter e a Pedra Filosofal: 1</p>
+                            <span>R$ 50,92</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/dracula_darkside.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Drácula - Dark Edition</p>
+                            <span>R$ 87,83</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-4 row g-3">
+                    <h3 class = "fs-5">Lançamentos</h3>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/agathachristie_acasatorta_harpercollins.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">A casa torta</p>
+                            <span>R$ 54,90</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/senhordosaneisp1_harpercollins.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">O Senhor dos Anéis: O retorno do rei</p>
+                            <span>R$ 47,53</span>
+                        </div>
+                    </div>
+                    <div class = "d-flex align-items-start justify-content-start">
+                        <img src = "Imagens/Livros/dunalivro5_aleph.jpg" alt = "" class = "img-fluid pe-3 w-25">
+                        <div>
+                            <p class = "mb-0">Hereges de Duna</p>
+                            <span>R$ 69,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "novidades" class = "py-5">
+        <div class = "container">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Novidades</h2>
+                </div>
+                <p class = "text-center text-muted">Palavras que chegam até você: inscreva-se no nosso canal de transmissão para ficar atualizado!</p>
+                <div class = "input-group mb-3 mt-3">
+                    <input type = "text" class = "form-control" placeholder="Email">
+                    <button class = "btn btn-primary" type = "submit">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+</body>
+</html>

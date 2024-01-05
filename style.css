@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Botões superiores*/
+
+.bg-primary{
+    background-color: rgb(134, 87, 223)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: white;
+    color: rgb(99, 97, 97);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(99, 97, 97);
+}
+
+.btn:not(.nav-btns button):hover{
+    background-color: rgb(134, 87, 223);
+    color: white;
+    border-color: rgb(134, 87, 223);
+}
+
+.navbar .container a{
+
+    color: black;
+}
+
+/*Cor do texto*/
+
+.text-primary{
+    color: rgb(241, 241, 75)!important;
+}
+
+/*Navbar*/
+
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.096);
+}
+
+.navbar-brand img{
+    width: 30px;
+}
+
+.navbar-brand span{
+    letter-spacing: 2px;
+
+}
+
+.nav-link:hover{
+    color: rgb(134, 87, 223)!important;
+}
+
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/*Cabeçalho*/
+
+#header{
+    background: url(../EcommerceAutWeb/Imagens/banner1.jpeg) top/cover no-repeat;
+}
+
+.carousel-inner h1{
+    font-size: 60px;
+}
+
+.carousel-item .btn{
+    border-color: white!important;
+
+}
+
+.carousel-item .btn:hover{
+    border-color:  rgb(134, 87, 223)!important;
+
+}
+
+/*Títulos*/
+
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: rgb(134, 87, 223);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Destaques*/
+
+.active-filter-btn{
+    background-color: rgb(134, 87, 223)!important;
+    color: white!important;
+    border-color: rgb(134, 87, 223)!important;
+}
+
+.filter-button-group .btn:hover{
+    color: white !important;
+}
+.destaques-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+/*Pré-venda*/
+
+.prevenda-img span{
+    top: 20px;
+    right: 20px;
+}
+
+.prevenda-list .btn{
+    padding: 8px 20px!important;
+}
+
+.prevenda-img img{
+    transition: all 0.3s ease;
+}
+
+.prevenda-img:hover img{
+    transform: scale(1.2);
+}
+
+/*Banners ofertas*/
+
+#bannerofertas1{
+    background: url(../EcommerceAutWeb/Imagens/bannerclassicosgoticos.jpg) center/cover no-repeat;
+}
+
+#bannerofertas1 .row{
+    min-height: 60vh;
+}
+
+.bannerofertas1-content span{
+    font-size: 28px;
+}
+
+.bannerofertas1-content h2{
+    font-size: 60px;
+
+}
+
+.bannerofertas1-content .btn{
+    border-color: transparent!important;
+}
+
+#bannerofertas2{
+    background: url(../EcommerceAutWeb/Imagens/banner2.jpeg) center/cover no-repeat;
+}
+
+#bannerofertas2.row{
+    min-height: 70vh;
+}
+
+.bannerofertas2-content span{
+    font-size: 28px;
+}
+
+.bannerofertas2-content h2{
+    font-size: 60px;
+
+}
+
+.bannerofertas2-content .btn{
+    border-color: transparent!important;
+}
+
+
+/*Góticos*/
+
+.goticos-img span{
+    top: 20px;
+    right: 20px;
+}
+
+.goticos-list .btn{
+    padding: 8px 20px!important;
+}
+
+.goticos-img img{
+    transition: all 0.3s ease;
+}
+
+.goticos-img:hover img{
+    transform: scale(1.2);
+}
+
+/*Fantasia*/
+.fantasia-img span{
+    top: 20px;
+    right: 20px;
+}
+
+.fantasia-list .btn{
+    padding: 8px 20px!important;
+}
+
+.fantasia-img img{
+    transition: all 0.3s ease;
+}
+
+.fantasia-img:hover img{
+    transform: scale(1.2);
+}
+
+/*Misterios e crimes*/
+
+.misterio-img span{
+    top: 20px;
+    right: 20px;
+}
+
+.misterio-list .btn{
+    padding: 8px 20px!important;
+}
+
+.misterio-img img{
+    transition: all 0.3s ease;
+}
+
+.misterio-img:hover img{
+    transform: scale(1.2);
+}
+
+/* Newsletter */
+#novidades{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#novidades p{
+    max-width: 600px;
+}
+#novidades .input-group{
+    max-width: 500px;
+}
+#novidades .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#novidades .btn{
+    background-color: rgb(134, 87, 223);
+    color: white;
+    border-color: rgb(134, 87, 223);
+}
+#novidades .btn:hover{
+    background-color: black;
+    border-color: black;
+}
+
+/*Rodapé*/
+
+footer .brand{
+    letter-spacing: 2px;
+}
+footer .container a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+footer .container a:hover{
+    color: rgb(134, 87, 223)!important;
+}
+
+/*Media Queries*/
+
+@media (min-width: 992px) {
+    .nav-item{
+        border-bottom: none;
+    }
+}
