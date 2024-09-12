@@ -28,7 +28,6 @@ class ProdutoComponente extends HTMLElement {
                 </div>
                 <p class="my-1">${titulo}</p>
                 <span class="fw-bold">R$ ${preco}</span>
-                <a href="carrinho.html" class="btn btn-primary mt-3">Adicionar ao carrinho</a>
             </div>
         `;
         this.appendChild(div);
